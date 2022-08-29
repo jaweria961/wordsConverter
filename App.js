@@ -6,6 +6,10 @@ let characters = document.querySelector('.characters');
 text.addEventListener('input',() =>{
     debugger;
     characters.textContent = text.value.length;
+     if( characters.textContent>1000)
+    {
+        alert("Characters should be less than 1000 ")
+    }
 
     console.log('characters')
     let _words = text.value.trim()
