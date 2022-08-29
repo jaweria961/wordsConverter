@@ -1,0 +1,84 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size:62.5%
+}
+body{
+    background: linear-gradient(0deg, rgba(34,195,191,1) 35%, rgba(45,253,118,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+    border-radius: 3px;
+    background-color: white;
+    height: 290px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px 5px rgb(149, 135, 168);
+}
+.text{
+    height: 200px;
+    margin: 3rem;
+    transform: translate(-20px);
+    font-size: 0.9rem;
+    resize: none;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.boxes{
+    border-radius: 7px;
+    background-color: rgb(12, 133, 8);
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    transform: translateY(140px);
+    gap:1rem    
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transform: translateY(-5px);
+}
+.box::before{
+content: attr(data-text);
+color: rgba(199,195,195,0.874);
+position: absolute;
+height: 10px;
+width: 50px;
+font-size: 0.9rem;
+transform: translateY(18px);
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
